@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+<script src="js/script1.js"></script>
+</head>
+
+<body onload="navbar(event, 'OneWay')">
+
+ <div class="row">
+         <div class="column">
+
+          <div class="tab">
+           <button class="tablinks" onclick="navbar(event, 'OneWay')">OneWay</button>
+            <button class="tablinks" onclick="navbar(event, 'Return')">Return</button>
+                </div>
+                
+                <form name="form" onsubmit="return one()">
+                <div id="OneWay" class="tabcontent">
+                        
+                      <label for="from">Origin City</label><br>
+                      <input type="text" id="origin"  name="origin"   ><br><br>
+                      <span id="orgn"></span><br>
+                
+                        <label for="destination">Destination</label><br>
+                           <input type="text" name="destination"  ><br><br>
+                             <span id="dst"></span><br>
+                
+                                <label >Departure date</label><br>
+                                <input  type="date" name="somedate" onclick="a()"><br><br>
+                
+                
+                                <label for="passengers">Passengers</label><br>
+                        <select  id="passengers">
+                             <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br><br>
+                  </div>
+                
+                
+                         <div id="Return" class="tabcontent">
+                          <label for="from">Origin City</label><br>
+                                <input type="text"  id="origin" ><br><br>
+                                <span id="orgm"></span>
+                         
+                                <label for="destination">Destination</label><br>
+                                <input type="text" id="destination"><br><br>
+                
+                                <label >Departure date</label><br>
+                                <input  type="date" name="somedate" onclick="a()"><br><br>
+                
+                                <label >Return date</label><br>
+                                <input  type="date" name="somedate" onclick="a()"><br><br>
+                
+                                <label for="passengers">Passengers</label><br>
+                           <select  id="passengers">
+                             <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select><br><br>
+                 </div>   <!--Return div-->
+                           <input type="submit" value="submit">
+                
+                   <hr>
+                            </form>
+                
+                
+
+   
+  </div>  <!--column div-->
+
+  <div class="column" style="background-color:rgb(134, 130, 130);">
+    <h2>Flight Search Engine</h2><hr>
+    <p>Show json text..</p>
+  </div>
+</div>   <!--Row div-->
+
+</body>
+</html>
