@@ -21,9 +21,10 @@
                 <div id="OneWay" class="tabcontent">
                         
                       <label for="from">Origin City</label><br>
-                      <input type="text" id="origin"  name="origin"   ><br><br>
+                      <input type="text" id="origin"  name="origin" onkeyup="changeInput(this.value)"  ><br>
                       <span id="orgn"></span><br>
-                
+                        <div id="result"></div>
+
                         <label for="destination">Destination</label><br>
                            <input type="text" name="destination"  ><br><br>
                              <span id="dst"></span><br>
